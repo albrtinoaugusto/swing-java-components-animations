@@ -22,8 +22,7 @@ public class Main extends javax.swing.JFrame {
 
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         timeLabel = new javax.swing.JLabel();
         minimize = new javax.swing.JLabel();
@@ -51,10 +50,8 @@ public class Main extends javax.swing.JFrame {
         timeLabel.setBounds(20, 8, 150, 20);
 
         minimize.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        minimize.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+        minimize.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 minimizeMouseReleased(evt);
             }
         });
@@ -62,10 +59,8 @@ public class Main extends javax.swing.JFrame {
         minimize.setBounds(941, 8, 20, 20);
 
         close.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        close.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseReleased(java.awt.event.MouseEvent evt)
-            {
+        close.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
                 closeMouseReleased(evt);
             }
         });
@@ -73,17 +68,13 @@ public class Main extends javax.swing.JFrame {
         close.setBounds(970, 8, 20, 20);
 
         topBar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aam/images/top.png"))); // NOI18N
-        topBar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseDragged(java.awt.event.MouseEvent evt)
-            {
+        topBar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
                 topBarMouseDragged(evt);
             }
         });
-        topBar.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+        topBar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 topBarMousePressed(evt);
             }
         });
@@ -154,6 +145,8 @@ public class Main extends javax.swing.JFrame {
 
                 try
                 {
+                    Thread.sleep(3000); 
+                    
                     Animation animation = new Animation();
                     int count = 0;
                     while (timeRun == 0)
