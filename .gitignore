@@ -1,8 +1,6 @@
-/nbproject/project.xml
-/nbproject/build-impl.xml
 /nbproject/genfiles.properties
-/nbproject/project.properties
-/src/aam/gui/Main.form
-/build.xml
 /manifest.mf
-/dist/
+/build.xml
+/nbproject/build-impl.xml
+/nbproject/project.properties
+/nbproject/project.xml
